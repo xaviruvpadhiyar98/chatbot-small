@@ -61,7 +61,8 @@
 			</ul>
 		</div>
         <script>
-            var ws = new WebSocket("ws://localhost:5000/ws");
+			console.log(window.location.host)
+            var ws = new WebSocket("ws://" + window.location.host +  "ws");
             ws.onmessage = function(event) {
                 var messages = document.getElementById('messages')
                 var message = document.createElement('li')
