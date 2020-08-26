@@ -2,6 +2,6 @@ requests
 fastapi
 aiofiles
 uvicorn
-torch==1.0.1+cpu
+torch==1.0.0+cpu
 transformers
 
