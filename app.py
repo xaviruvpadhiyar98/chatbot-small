@@ -40,7 +40,7 @@ async def websocket_endpoint(websocket: WebSocket):
             temperature=0.8
         )
         step += 1
-        bot_reply = tokenizer.decode(chat_history_ids[:, bot_input_ids.shape[-1]:][0], skip_special_tokens=True))
+        bot_reply = tokenizer.decode(chat_history_ids[:, bot_input_ids.shape[-1]:][0], skip_special_tokens=True)
         await websocket.send_text(f"Message text was: {data}")
         await websocket.send_text(f"BOT text was: {bot_reply}")
 
